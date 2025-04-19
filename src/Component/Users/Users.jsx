@@ -8,7 +8,7 @@ const Users = () => {
             <p>User : {users.length}</p>
             <div>
                 {
-                    users.map(user => <User user={user}></User>)
+                    users.map(user => <User key={user.id} user={user}></User>)
                 }
             </div>
         </div>
